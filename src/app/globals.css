@@ -26,6 +26,11 @@
   :focus-visible {
     @apply outline-none ring-2 ring-brand-500 ring-offset-2 ring-offset-white;
   }
+
+  /* Cegah konten panjang memaksa track grid melebihi lebar layar. */
+  .grid > * {
+    min-width: 0;
+  }
 }
 
 @layer components {
